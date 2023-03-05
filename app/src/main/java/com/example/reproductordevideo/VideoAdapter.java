@@ -36,9 +36,9 @@ public class VideoAdapter extends ArrayAdapter<Video> {
             TextView duration = convertView.findViewById(R.id.videoDuration);
 
             if (thumbnail != null) {
-                thumbnail.setImageResource(R.drawable.default_thumbnail);
+                thumbnail.setImageResource(R.drawable.movie_48px);
             } else {
-                thumbnail.setImageResource(R.drawable.default_thumbnail);
+                thumbnail.setImageResource(R.drawable.movie_48px);
             }
 
             if (name != null) {

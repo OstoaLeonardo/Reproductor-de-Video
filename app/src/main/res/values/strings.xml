@@ -3,4 +3,5 @@
     <string name="nombre">nombre_de_video.mp4</string>
     <string name="duracion">01:30</string>
     <string name="ruta">/ruta/video.mp4</string>
+    <string name="buscar">Buscar video</string>
 </resources>
