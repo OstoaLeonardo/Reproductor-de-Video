@@ -1,11 +1,5 @@
 package com.example.reproductordevideo;
 
-import android.content.Context;
-import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.provider.MediaStore;
-
 public class Video {
     private String name;
     private String path;
@@ -38,6 +32,11 @@ public class Video {
         int hours = (duration / (1000*60*60));
         int minutes = (duration / (1000*60)) % 60;
         int seconds = (duration / 1000) % 60;
-        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+
+        if (hours > 0) {
+            return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+        } else {
+            return String.format("%02d:%02d", minutes, seconds);
+        }
     }
 }
